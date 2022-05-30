@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/lay_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:layout_marginEnd="@dimen/spacing_large"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start a poll"
+                android:textAppearance="@style/textAppearance.size16" />
+
+            <TextView
+                style="@style/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:gravity="start"
+                android:text="Select an option below to start your poll"
+                android:textAppearance="@style/textAppearance.size14.grey" />
+
+            <include
+                android:id="@+id/lnt_poll_yes_no"
+                layout="@layout/view_item_poll_button"
+                app:title="@{`Yes/No`}" />
+
+            <include
+                android:id="@+id/lnt_poll_true_false"
+                layout="@layout/view_item_poll_button"
+                app:title="@{`True/False`}" />
+
+            <include
+                android:id="@+id/lnt_poll_abc"
+                layout="@layout/view_item_poll_button"
+                app:title="@{`A/B/C`}" />
+
+            <include
+                android:id="@+id/lnt_poll_abcd"
+                layout="@layout/view_item_poll_button"
+                app:title="@{`A/B/C/D`}" />
+
+
+            <TextView
+                style="@style/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:gravity="start"
+                android:text="To create a custom poll, select the button below and input your options."
+                android:textAppearance="@style/textAppearance.size14.grey" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCreate"
+                style="@style/button.buttonOutlined.gray"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:text="Custom poll" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>

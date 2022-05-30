@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/lay_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:layout_marginEnd="@dimen/spacing_large"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start a poll"
+                android:textAppearance="@style/textAppearance.size16" />
+
+            <TextView
+                style="@style/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:gravity="start"
+                android:text="Select an option below to start your poll"
+                android:textAppearance="@style/textAppearance.size14.grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Yes"
+                    android:textAppearance="@style/textAppearance.size14.grey" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spacing_large"
+                        android:clickable="false"
+                        android:max="100"
+                        android:progress="30"
+                        app:indicatorColor="@color/colorPrimary"
+                        app:trackColor="@color/gray_light"
+                        app:trackCornerRadius="@dimen/border_radius_medium"
+                        app:trackThickness="50dp" />
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="@dimen/spacing_large"
+                        android:gravity="start|center_vertical"
+                        android:text="85%"
+                        android:textAppearance="@style/textAppearance.size18" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Yes"
+                    android:textAppearance="@style/textAppearance.size14.grey" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spacing_large"
+                        android:clickable="false"
+                        android:max="100"
+                        android:progress="30"
+                        app:indicatorColor="@color/colorPrimary"
+                        app:trackColor="@color/gray_light"
+                        app:trackCornerRadius="@dimen/border_radius_medium"
+                        app:trackThickness="50dp" />
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="@dimen/spacing_large"
+                        android:gravity="start|center_vertical"
+                        android:text="85%"
+                        android:textAppearance="@style/textAppearance.size18" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCreate"
+                style="@style/button.buttonOutlined.gray"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:text="Publish Polling Result" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>

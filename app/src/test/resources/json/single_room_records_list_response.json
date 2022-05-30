@@ -1,0 +1,124 @@
+{
+    "recordings": {
+        "returncode": true,
+        "recordings": [
+            {
+                "recordID": "076797f43202544a64ef2c2e73d86f094c0e4ea1-1639047707550",
+                "meetingID": "lhfrzveqyctjn2kikvqvmql9lgsxrvag4g1atijd",
+                "internalMeetingID": "076797f43202544a64ef2c2e73d86f094c0e4ea1-1639047707550",
+                "name": "General Discussion",
+                "isBreakout": "false",
+                "published": true,
+                "state": "published",
+                "startTime": "2021-12-09T11:01:47.000+00:00",
+                "endTime": "2021-12-09T11:04:34.000+00:00",
+                "participants": "1",
+                "rawSize": "4356155",
+                "metadata": {
+                    "bbb-origin-version": "v2",
+                    "meetingName": "General Discussion",
+                    "meetingId": "lhfrzveqyctjn2kikvqvmql9lgsxrvag4g1atijd",
+                    "gl-listed": "true",
+                    "bbb-origin": "Greenlight",
+                    "isBreakout": "false",
+                    "bbb-origin-server-name": "staging.vaiyo.io"
+                },
+                "size": "640028",
+                "playback": {
+                    "format": {
+                        "type": "presentation",
+                        "url": "\n      https://staging.vaiyo.io/playback/presentation/2.0/playback.html?meetingId=076797f43202544a64ef2c2e73d86f094c0e4ea1-1639047707550\n    ",
+                        "processingTime": "30224",
+                        "length": 1,
+                        "size": "640028",
+                        "preview": {
+                            "images": {
+                                "image": [
+                                    {
+                                        "width": "176",
+                                        "height": "136",
+                                        "alt": "Recording User Authentication",
+                                        "content": "\n            https://staging.vaiyo.io/presentation/076797f43202544a64ef2c2e73d86f094c0e4ea1-1639047707550/presentation/d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1639047707594/thumbnails/thumb-1.png\n          "
+                                    },
+                                    {
+                                        "width": "176",
+                                        "height": "136",
+                                        "alt": " Future Development",
+                                        "content": "\n            https://staging.vaiyo.io/presentation/076797f43202544a64ef2c2e73d86f094c0e4ea1-1639047707550/presentation/d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1639047707594/thumbnails/thumb-2.png\n          "
+                                    },
+                                    {
+                                        "width": "176",
+                                        "height": "136",
+                                        "alt": "AIYO",
+                                        "content": "\n            https://staging.vaiyo.io/presentation/076797f43202544a64ef2c2e73d86f094c0e4ea1-1639047707550/presentation/d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1639047707594/thumbnails/thumb-3.png\n          "
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "data": {}
+            },
+            {
+                "recordID": "076797f43202544a64ef2c2e73d86f094c0e4ea1-1639046193003",
+                "meetingID": "lhfrzveqyctjn2kikvqvmql9lgsxrvag4g1atijd",
+                "internalMeetingID": "076797f43202544a64ef2c2e73d86f094c0e4ea1-1639046193003",
+                "name": "General Discussion",
+                "isBreakout": "false",
+                "published": true,
+                "state": "published",
+                "startTime": "2021-12-09T10:36:33.000+00:00",
+                "endTime": "2021-12-09T10:39:28.000+00:00",
+                "participants": "1",
+                "rawSize": "3948839",
+                "metadata": {
+                    "bbb-origin-version": "v2",
+                    "meetingName": "General Discussion",
+                    "meetingId": "lhfrzveqyctjn2kikvqvmql9lgsxrvag4g1atijd",
+                    "gl-listed": "false",
+                    "bbb-origin": "Greenlight",
+                    "isBreakout": "false",
+                    "bbb-origin-server-name": "staging.vaiyo.io"
+                },
+                "size": "612041",
+                "playback": {
+                    "format": {
+                        "type": "presentation",
+                        "url": "\n      https://staging.vaiyo.io/playback/presentation/2.0/playback.html?meetingId=076797f43202544a64ef2c2e73d86f094c0e4ea1-1639046193003\n    ",
+                        "processingTime": "27710",
+                        "length": 1,
+                        "size": "612041",
+                        "preview": {
+                            "images": {
+                                "image": [
+                                    {
+                                        "alt": "Recording User Authentication",
+                                        "height": "136",
+                                        "width": "176",
+                                        "content": "\n            https://staging.vaiyo.io/presentation/076797f43202544a64ef2c2e73d86f094c0e4ea1-1639046193003/presentation/d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1639046193034/thumbnails/thumb-1.png\n          "
+                                    },
+                                    {
+                                        "alt": " Future Development",
+                                        "height": "136",
+                                        "width": "176",
+                                        "content": "\n            https://staging.vaiyo.io/presentation/076797f43202544a64ef2c2e73d86f094c0e4ea1-1639046193003/presentation/d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1639046193034/thumbnails/thumb-2.png\n          "
+                                    },
+                                    {
+                                        "alt": "AIYO",
+                                        "height": "136",
+                                        "width": "176",
+                                        "content": "\n            https://staging.vaiyo.io/presentation/076797f43202544a64ef2c2e73d86f094c0e4ea1-1639046193003/presentation/d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1639046193034/thumbnails/thumb-3.png\n          "
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "data": {}
+            }
+        ],
+        "messageKey": "",
+        "message": ""
+    },
+    "status": 200
+}

@@ -1,0 +1,43 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="title"
+            type="java.lang.String" />
+        <variable
+            name="icon"
+            type="android.graphics.drawable.Drawable" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/lnt_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/spacing_normal"
+        android:paddingBottom="@dimen/spacing_normal"
+        android:gravity="center_vertical"
+        android:theme="@style/SelectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="@dimen/_20dp"
+            android:background="@{icon}" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:text="@{title}"
+            android:textAppearance="@style/textAppearance.size16" />
+
+    </LinearLayout>
+</layout>

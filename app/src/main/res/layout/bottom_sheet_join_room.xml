@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/screen_spacing">
+
+    <TextView
+        style="@style/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/join_room_fragment_title"
+        android:textAppearance="@style/textAppearance.size16" />
+
+    <TextView
+        android:id="@+id/txt_room_name_title"
+        style="@style/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_xlarge"
+        android:gravity="center"
+        android:textAppearance="@style/textAppearance.size16.bold"
+        tools:text="2local app discussion"/>
+
+    <TextView
+        android:id="@+id/txt_room_presenter"
+        style="@style/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:text="by Antony change"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:textAppearance="@style/textAppearance.size14.grey" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_xlarge">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_email"
+            style="@style/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:hint="@string/join_room_fragment_edt_enter_user_name"
+            android:textAlignment="inherit" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRegister"
+        style="@style/button.primary"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:text="@string/join_room_fragment_btn_join" />
+</LinearLayout>

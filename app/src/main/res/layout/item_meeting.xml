@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="room"
+            type="io.vaiyo.domain.model.Room" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/widgetContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_normal"
+        android:background="@drawable/bg_border1_accent_round15"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/screen_spacing" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/screen_spacing" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="@dimen/screen_spacing" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="@dimen/screen_spacing" />
+
+        <ImageView
+            android:id="@+id/imageMenu"
+            style="@style/icon.large.padding"
+            android:padding="@dimen/spacing_normal"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineRight"
+            app:layout_constraintTop_toTopOf="@+id/guidelineTop"
+            app:srcCompat="@drawable/ic_dot_menu" />
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="@dimen/_50dp"
+            android:background="@drawable/bg_primary_round15"
+            android:padding="@dimen/spacing_normal"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toTopOf="@+id/guidelineTop"
+            app:srcCompat="@drawable/img_video_call" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:text="@{room.name}"
+            android:textAppearance="@style/textAppearance.size14.bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtSession"
+            app:layout_constraintStart_toEndOf="@+id/imageLogo"
+            app:layout_constraintTop_toTopOf="@+id/imageLogo" />
+
+        <TextView
+            android:id="@+id/txtSession"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:text="@{@string/activity_room_list_last_session(room.lastSessionDateFormatter)}"
+            android:textAppearance="@style/textAppearance.size12.grey"
+            app:layout_constraintBottom_toBottomOf="@+id/imageLogo"
+            app:layout_constraintStart_toEndOf="@+id/imageLogo"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+        <TextView
+            android:id="@+id/textRecordings"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:text="@string/activity_room_list_title_recordings"
+            android:textAppearance="@style/textAppearance.size14.grey"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/imageLogo" />
+
+        <io.vaiyo.presentation.view.ParticipateAvatars
+            android:id="@+id/participates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            app:layout_constraintBottom_toBottomOf="@+id/textParticipants"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+            app:layout_constraintTop_toTopOf="@+id/textParticipants"
+            />
+
+
+        <TextView
+            android:id="@+id/textRecordingCount"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@string/activity_room_list_recording(room.totalRecordings)}"
+            android:textAppearance="@style/textAppearance.size12.primary.bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textRecordings"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+            app:layout_constraintTop_toTopOf="@+id/textRecordings" />
+
+
+        <TextView
+            android:id="@+id/textParticipants"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:text="@string/activity_room_list_title_participants"
+            android:textAppearance="@style/textAppearance.size14.grey"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/textRecordings" />
+
+        <TextView
+            android:id="@+id/textRoomLink"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:text="@string/activity_room_list_title_room_link"
+            android:textAppearance="@style/textAppearance.size14.grey"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/textParticipants" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:layout_marginEnd="@dimen/spacing_large"
+            android:gravity="start"
+            android:text="@{room.roomLink}"
+            app:layout_constraintBottom_toBottomOf="@+id/textRoomLink"
+            app:layout_constraintEnd_toStartOf="@+id/imageCopy"
+            app:layout_constraintStart_toEndOf="@+id/textRoomLink"
+            app:layout_constraintTop_toTopOf="@+id/textRoomLink" />
+
+        <ImageView
+            android:id="@+id/imageCopy"
+            style="@style/icon.large.padding"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_constraintBottom_toBottomOf="@+id/textView7"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+            app:layout_constraintTop_toTopOf="@+id/textRoomLink"
+            app:srcCompat="@drawable/img_copy" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

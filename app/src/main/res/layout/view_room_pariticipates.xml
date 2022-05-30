@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/widgetContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right">
+
+    <TextView
+        android:id="@+id/txt_no_participate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/activity_room_list_not_participates"
+        android:textAppearance="@style/textAppearance.size12"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/frame_participate_1"
+        android:layout_width="@dimen/_30dp"
+        android:layout_height="@dimen/_30dp"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:visibility="gone">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/user_avatar_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/bg_primary_circular"
+            android:visibility="gone"
+            app:shapeAppearanceOverlay="@style/circleImageView" />
+
+        <TextView
+            android:id="@+id/user_txt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAppearance="@style/textAppearance.size16.white"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_participate_2"
+        android:layout_width="@dimen/_30dp"
+        android:layout_height="@dimen/_30dp"
+        android:layout_gravity="right"
+        android:layout_marginEnd="@dimen/_22dp"
+        android:gravity="right"
+        android:visibility="gone">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/user_avatar_2"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"
+            android:layout_gravity="right"
+            android:background="@drawable/bg_primary_circular"
+            android:visibility="gone"
+            app:shapeAppearanceOverlay="@style/circleImageView" />
+
+        <TextView
+            android:id="@+id/user_txt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAppearance="@style/textAppearance.size16.white"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_participate_3"
+        android:layout_width="@dimen/_30dp"
+        android:layout_height="@dimen/_30dp"
+        android:layout_gravity="right"
+        android:layout_marginEnd="@dimen/_44dp"
+        android:gravity="right"
+        android:visibility="gone">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/user_avatar_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_primary_circular"
+            android:visibility="gone"
+            app:shapeAppearanceOverlay="@style/circleImageView" />
+
+        <TextView
+            android:id="@+id/user_txt_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAppearance="@style/textAppearance.size16.white"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_participate_4"
+        android:layout_width="@dimen/_30dp"
+        android:layout_height="@dimen/_30dp"
+        android:layout_gravity="right"
+        android:layout_marginEnd="@dimen/_68dp"
+        android:gravity="right"
+        android:visibility="gone">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/user_avatar_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/bg_primary_circular"
+            android:visibility="gone"
+            app:shapeAppearanceOverlay="@style/circleImageView" />
+
+        <TextView
+            android:id="@+id/user_txt_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAppearance="@style/textAppearance.size16.white"
+            android:visibility="gone" />
+    </FrameLayout>
+</merge>

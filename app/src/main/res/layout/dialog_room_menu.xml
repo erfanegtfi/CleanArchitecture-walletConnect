@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/lay_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:layout_marginEnd="@dimen/spacing_large"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/lnt_start_poll"
+                layout="@layout/view_item_room_menu"
+                app:title="@{@string/join_menu_item_start_poll}"
+                app:icon="@{@drawable/ic_start_poll}"
+                />
+
+            <include
+                android:id="@+id/lnt_upload_presentation"
+                layout="@layout/view_item_room_menu"
+                app:title="@{@string/join_menu_item_upload_presentation}"
+                app:icon="@{@drawable/ic_upload_presentation}"
+                />
+
+            <include
+                android:id="@+id/lnt_share_external_video"
+                layout="@layout/view_item_room_menu"
+                app:title="@{@string/join_menu_item_share_external_video}"
+                app:icon="@{@drawable/ic_sahare_video}"
+                />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>

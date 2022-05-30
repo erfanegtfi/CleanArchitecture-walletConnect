@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_authentication"
+    app:startDestination="@id/authentication_dest">
+
+
+    <fragment
+        android:id="@+id/authentication_dest"
+        android:name="io.vaiyo.presentation.authentication.FragmentAuthentication"
+        android:label="login"
+        tools:layout="@layout/fragment_authentication">
+
+        <action
+            android:id="@+id/action_authentication_dest_to_login_dest"
+            app:destination="@id/login_dest" />
+        <action
+            android:id="@+id/action_authentication_dest_to_register_dest"
+            app:destination="@id/register_dest" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/register_dest"
+        android:name="io.vaiyo.presentation.authentication.register.FragmentRegister"
+        android:label="register"
+        tools:layout="@layout/fragment_register">
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/login_dest"
+        android:name="io.vaiyo.presentation.authentication.login.FragmentLogin"
+        android:label="login"
+        tools:layout="@layout/fragment_login">
+
+
+    </fragment>
+
+</navigation>
